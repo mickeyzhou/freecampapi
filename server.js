@@ -2,6 +2,10 @@ var express = require("express");
 var app = express();
 var strftime = require("strftime");
 
+app.get('/', function(req, res){
+    res.send('hello world');    
+});
+
 app.get('/:time', function(req, res){
     var param = req.params.time;
     console.log(param);
@@ -19,4 +23,4 @@ app.get('/:time', function(req, res){
         });
     }
 });
-app.listen(8080);
+app.listen(process.env.PORT || 8080);
