@@ -3,7 +3,8 @@ var app = express();
 var strftime = require("strftime");
 
 app.get('/', function(req, res){
-    res.send('hello world');    
+    res.send('https://murmuring-plateau-27272.herokuapp.com/December%2015,%202015\
+https://murmuring-plateau-27272.herokuapp.com/1450137600');    
 });
 
 app.get('/:time', function(req, res){
